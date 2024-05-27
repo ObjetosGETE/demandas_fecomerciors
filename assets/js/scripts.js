@@ -1,5 +1,22 @@
 $(function(){
     var lastSection = "#apresentacao";
+
+    $(".bto-hamburguer").click(function(){
+        $("#menuMobile-content").toggle("fast")
+        
+        if(!$(this).hasClass("ativo")){
+          $(this).addClass("ativo");
+          $("#menuMobile, #menuMobile-content").addClass("h-100");
+        }else{
+          $(this).removeClass("ativo");
+          $("#menuMobile, #menuMobile-content").removeClass("h-100");
+        }
+    });
+    $("#menuMobile a").click(function (){
+      $(".bto-hamburguer").removeClass("ativo");
+      $("#menuMobile, #menuMobile-content").removeClass("h-100");
+      $("#menuMobile-content").hide("fast")
+    })
     $("a").click(function(e){
         var hash = $(this).attr("href");
         var ignore = $(this).attr("data-ignore");
@@ -38,7 +55,7 @@ $(function(){
           }
       });
 
-      const $links = $('#menu a');
+  const $links = $('#menu a, #menuMobile a');
   const $sections = $('#apresentacao, #municipal, #estadual, #federal');
 
   // Intersection Observer
@@ -47,7 +64,9 @@ $(function(){
       const $link = $(`a[href="#${entry.target.id}"]`);
       if (entry.isIntersecting) {
         $link.addClass('ativo');
+        $(`#menu, #menuMobile-content`).removeClass("bg-apresentacao bg-municipal bg-estadual bg-federal");
         $(`#menu`).addClass('bg-'+ entry.target.id);
+        $(`#menuMobile-content`).addClass('bg-'+ entry.target.id);
       } else {
         $link.removeClass('ativo');
       }
@@ -69,8 +88,12 @@ $(function(){
       if (scrollPos >= sectionTop) {
         $links.removeClass('ativo');
         $(`a[href="#${$section.attr('id')}"]`).addClass('ativo');
+        $(`#menu, #menuMobile-content`).removeClass("bg-apresentacao bg-municipal bg-estadual bg-federal");
         $(`#menu`).addClass('bg-'+ $section.attr('id'));
+        $(`#menuMobile-content`).addClass('bg-'+ $section.attr('id'));
       }
     });
   });
+
+
 });
