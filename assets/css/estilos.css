@@ -1,0 +1,498 @@
+:root {
+    /* Cores */
+    --cor-1: #004A8D;
+    --cor-2: #7784AC;
+    --cor-3: #ffffff;
+    --cor-4: #000000;
+    --cor-5: #11487A;
+    --cor-6: #3D4B58;
+    --cor-7: #C89633;
+    --cor-8: #f2f2f2;
+    --cor-9: #d9d9d9;
+
+    /* Backgrounds */
+    --bg-apresentacao: "../img/bg1.jpg";
+    --bg-apresentacao-png: "../img/bg1.png";
+    --bg-municipal: "../img/bg2.jpg";
+    --bg-municipal-png: "../img/bg2.png";
+    --bg-estadual: "../img/bg3.jpg";
+    --bg-estadual-png: "../img/bg3.png";
+    --bg-federal: "../img/bg4.jpg";
+    --bg-federal-png: "../img/bg4.png";
+
+    /* Headers/Topos */
+    --header-topo-height: 90px;
+    --header-bg-apresentacao: var(--cor-1);
+    --header-bg-municipal: var(--cor-2);
+    --header-bg-estadual: var(--cor-1);
+    --header-bg-federal: var(--cor-2); 
+    --header-font-color: var(--cor-3);
+    --header-font: bold 1em var(--padrao-font-family); 
+    --header-link-font: 700 1em var(--padrao-font-family);
+    --header-link-color: var(--cor-3);
+
+    /* Título e Texto padrão */
+    --padrao-font-family: "Montserrat", sans-serif; /* font-family padrão*/
+
+    --titulo-apresentacao-font: 900 2em var(--padrao-font-family);
+    --titulo-apresentacao-color: var(--cor-5);
+    --texto-font: 400 1em var(--padrao-font-family);
+    --texto-regular-font: 400 1em var(--padrao-font-family);
+    --texto-negrito-font: 700 1em var(--padrao-font-family);
+    --texto-italico-font: italic 400 1em var(--padrao-font-family);
+    --texto-italiconegrito-font: italic 700 1em var(--padrao-font-family);
+    --texto-color: var(--cor-4);
+
+    /* Ícones */
+    --ico-tempo: "../img/ico-tempo.svg";
+    --ico-tempo-png: "../img/ico-tempo.png";
+    --ico-megafone: "../img/ico-megafone.svg";
+    --ico-tempo-png: "../img/ico-megafone.png";
+    --ico-bars: "../img/ico-bars.svg";
+    --ico-bars-png: "../img/ico-bars.png";
+
+    /* Menu Hamburguer */
+    --icon-active-color: var(--cor-3);
+    --icon-size: 48;
+    --icon-bar-size: 8;
+    --icon-translation-size: calc((var(--icon-size) - var(--icon-bar-size)) / 2);
+
+  }
+  @import url(montserrat.css); /* Importando as fontes */
+
+  /* Estilos iniciais */
+  html, body {
+    height: 100%;
+  }
+  body
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+  }
+  h1, h2 {
+    color: var(--titulo-apresentacao-color);
+    font: var(--titulo-apresentacao-font);
+    overflow: hidden;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  h1 span.texto {
+    max-width: 361px;
+    display: block;
+  }
+  h1 span.lettering-demandas {
+    background: url("../img/demandas-texto.svg") top left / auto 100% no-repeat;
+    width: 208.46px;
+    height: 48.58px;  
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  #municipal h2,
+  #federal h2 {
+    color: var(--cor-6)
+  } 
+  em {
+    font: var(--texto-italico-font);
+  }
+  strong {
+    font: var(--texto-negrito-font);
+  }
+  strong > em, em > strong {
+    font: var(--texto-italiconegrito-font);
+  }
+  .container {
+    max-width: 900px;
+  }
+
+  #estadual .container, #federal .container {
+    max-width: 1100px;
+  }
+  p {
+    font: var(--texto-regular-font);
+    text-align: left;
+  }
+  .quote {
+    border-left: 8px solid var(--cor-1);
+    padding-left: 20px;
+    margin-bottom: 20px;
+    max-width: 545px;
+    margin: 40px auto;
+  }
+  .quote a {
+    text-decoration: underline;
+    color: black;
+    font-weight: 700;
+  }
+  .quote a:hover {
+    text-decoration: none;
+  }
+/* Box de topicos */
+.box {
+  max-width: 500px;
+  background-color: white;
+  border-radius: 12px;
+  margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+.box [class^="ico-"] {
+  padding-left: 70px;
+  background: url(../img/ico-tempo.svg) center left no-repeat;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 35px;
+  margin-bottom: 37px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.txt-apoio {
+  overflow: hidden;
+  margin: 0px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  line-height: 150%;
+  font-weight: 700;
+  text-align: center;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+#estadual .box .txt-apoio {
+  background-color: var(--cor-5);
+  color: white;
+}
+#federal .box .txt-apoio {
+  background-color: var(--cor-6);
+  color: white;
+}
+
+/* Modais */
+.modal-content .modal-body .container {
+  max-width: 680px;
+} 
+.modal-content .modal-body .container p {
+  line-height: 150%;
+} 
+.modal-dialog h2 {
+  color: var(--cor-4);
+
+}
+.modal-dialog .modal-header {
+  background-color: var(--cor-7);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.modal-footer {
+  background-color: var(--cor-8);
+  border-top: 1px solid --cor-3;
+}
+.modal-dialog .bto-fechar {
+  background: none; 
+  border: 0px none;
+  font-weight: 300;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: auto;
+}
+.destaque {
+  text-align: center;
+  max-width: 465px;
+  margin: auto;
+  display: block;
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  border-color: var(--cor-9);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+}
+.destaque a {
+  word-break: keep-all;
+  color: var(--cor-4)
+  
+}
+.modal-dialog .titulo {
+  font-size: 1.2em
+}
+.destaque-box {
+  background-color: var(--cor-9);
+  max-width: 381px;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.destaque-box p, .destaque-box ul {
+  margin-bottom: 0px;
+}
+/* Menu TOPO */
+.bg-apresentacao {
+  background-color: var(--header-bg-apresentacao);
+}
+.bg-municipal {
+  background-color: var(--header-bg-municipal);
+}
+.bg-estadual {
+  background-color: var(--header-bg-estadual);
+}
+.bg-federal {
+  background-color: var(--header-bg-federal);
+}
+#menu {
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+}
+#menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 100%;
+  padding: 0px 20px;
+}
+#menu nav .coluna-1, #menu nav .coluna-3 {
+  flex-basis: 25%;
+  display: block;
+}
+#menu nav .coluna-3{
+  text-align: right;
+}
+#menu nav .logo-fecomercio {
+  max-width: 246.25px;
+  width: 100%;
+}
+#menu nav .brasao {
+  max-width: 84px;
+  width: 100%;
+}
+#menu nav .coluna-2 {
+  flex-basis: 50%;
+}
+#menu nav .coluna-2 p {
+  margin: 0px;
+}
+#menu nav .coluna-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu nav .coluna-2 a {
+  color: var(--header-link-color);
+  font: var(--header-link-font);
+  opacity: .4;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+#menu nav .coluna-2 a:hover,
+#menu nav .coluna-2 a:visited,
+#menu nav .coluna-2 a:focus,
+#menu nav .coluna-2 a.ativo {
+  opacity: 1;
+}
+/* HEADERS */
+  header.topo-mobile {
+    height: var(--header-topo-height);
+    padding-right: 20px;
+    width: 100%;
+  }
+  header.topo-mobile.apresentacao {
+    background-color: var(--header-bg-apresentacao);
+  }
+  header.topo-mobile.municipal {
+    background-color: var(--header-bg-municipal);
+  }
+  header.topo-mobile.estadual {
+    background-color: var(--header-bg-estadual);
+  }
+  header.topo-mobile.federal {
+    background-color: var(--header-bg-federal);
+  }
+  header p {
+    font: var(--header-font);
+    color: var(--header-font-color);
+    text-align: right !important;
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+  }
+  .esconder{
+    font-size: 1px;
+    color: rgba(0,0,0,0);
+  }
+  .videoMaxWidth {
+    max-width: 598px;
+    margin: auto;
+  }
+/* Rodapé */
+  .rodape-link {
+    border-radius: 11px;
+    background-color: var(--cor-1);
+    color: var(--cor-3);
+    font-weight: 700;
+    padding: 10px 20px;
+    display: inline;
+    margin: auto;
+    overflow: hidden;
+    line-height: 60px
+  }
+
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  footer p {
+    margin-bottom: 0px;
+  }
+  /* Backgrounds de cada seção */
+  .secao {
+    overflow: hidden;
+  }
+  #apresentacao {
+    background: url(../img/bg1.jpg) top left / cover fixed no-repeat;
+  }
+  #municipal {
+    background: url(../img/bg2.jpg) top left / cover fixed no-repeat;
+  }
+  #estadual {
+    background: url(../img/bg3.jpg) top left / cover fixed no-repeat;
+  }
+  #federal {
+    background: url(../img/bg4.jpg) top left / cover fixed no-repeat;
+  }
+@media only screen and (max-width: 1600px){
+  #menu nav .coluna-2{ 
+    flex-basis: 65%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #menu nav .coluna-3{ 
+    flex-basis: 10%;
+  }
+  #menu nav .coluna-1{ 
+    flex-basis: 25%;
+  }
+  
+}
+  @media only screen and (max-width: 991px){
+    .container p {
+      text-align: left;
+    }
+    h1 {
+      justify-content: unset;
+      align-items: unset;
+    }
+  }
+
+  /* resetar */
+  button.resetar {
+    background: none;
+    border: 0px none;
+  }
+  /* Menu Hamburguer */
+  #menuMobile {
+    z-index: 2000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  #menuMobile nav {
+    display: none;
+  }
+  #menuMobile ul {
+    padding: 40px 0px;
+  }
+  #menuMobile ul li {
+    list-style: none;
+    padding: 0px;
+  }
+  #menuMobile ul li a {
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2em;
+    opacity: 0.5;
+  }
+  #menuMobile ul li a:hover,
+  #menuMobile ul li a.ativo {
+    opacity: 1 !important;
+  }
+  #menuMobile.ativo, #menuMobile.ativo nav {
+    height: 100%;
+  }
+  button.bto-hamburguer {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+
+  }
+  svg {
+    fill: var(--cor-3);
+    max-width: 100%;
+    vertical-align: baseline;
+  }
+  #menu-icon {
+    cursor: pointer;
+  }
+  .hamburger-icon {
+    cursor: pointer;
+  }
+  
+  .hamburger-icon rect {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger-icon:hover rect,
+  .ativo .hamburger-icon rect {
+    fill: var(--icon-active-color);
+  }
+  
+  .ativo .hamburger-icon .top,
+  .ativo .hamburger-icon .bottom {
+    transform-origin: center;
+  }
+  
+ .ativo .hamburger-icon .top {
+    transform: rotate(45deg)
+      translate(0, calc(var(--icon-translation-size) * 1px));
+  }
+  
+  .ativo .hamburger-icon .bottom {
+    transform: rotate(-45deg)
+      translate(0, calc(var(--icon-translation-size) * -1px));
+  }
+  
+  .ativo .hamburger-icon .middle {
+    opacity: 0;
+  }
+  
+  

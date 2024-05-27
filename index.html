@@ -7,35 +7,581 @@
     <title>Medidas de auxílio às empresas impactadas - Demandas Fecomércio-RS</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fa/css/all.min.css">
-    <link rel="stylesheet" href="assets/fa/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Medidas de auxílio às empresas impactadas
-            <span>Demandas Fecomércio-RS</span>
-        </h1>
-    </header>
-    <div class="corpo">
-        <div class="container">
-            <p>Diante da catástrofe pela qual vem passando o Rio Grande do Sul, a <strong>Fecomércio-RS</strong>, além
-                de vir promovendo
-                diversas ações de ajuda humanitária direta às pessoas afetadas, solicitou ao Poder Público, em todos os
-                níveis, medidas que possam auxiliar as empresas gaúchas a retomar da forma mais rápida possível suas
-                atividades. </p>
 
-            <p>A reconstrução das áreas afetadas e a restauração das perdas das famílias estão intrinsecamente ligadas à
-                habilidade da economia local em preservar empregos e voltar a gerar renda para as pessoas, uma dinâmica
-                na qual o funcionamento das empresas desempenha um papel fundamental.</p>
-            <p>As medidas solicitadas visam lidar tanto com o problema relacionado à <span
-                    class="destaque"><strong>obstrução de atividades</strong></span>, que atinge
-                inúmeras empresas, incluindo muitas não alagadas diretamente, quanto com as <span
-                    class="destaque"><strong>perdas patrimoniais.</strong></span></p>
+    <div id="website">
+        <!-- Menu principal -->
+        <div id="menu" class="d-none d-lg-block bg-apresentacao">
+            <nav>
+                <div class="coluna-1"><img src="assets/img/logo-topo-fecomercio.svg" class="img-fluid logo-fecomercio"
+                        alt=""></div>
+                <div class="coluna-2">
+                    <p><a href="#apresentacao" class="ativo">Apresentação</a></p>
+                    <p><a href="#municipal">Âmbito<br>Municipal</a></p>
+                    <p><a href="#estadual">Âmbito<br>Estadual</a></p>
+                    <p><a href="#federal">Âmbito<br>Federal</a></p>
+                </div>
+                <div class="coluna-3"><img src="assets/img/brasao-topo-bens.svg" class="img-fluid brasao" alt=""></div>
+            </nav>
+        </div>
+        <div id="menuMobile" class="d-lg-none">
+            <div class="container">
+                <button type="button" class="bto-hamburguer resetar">
+                    <svg xmlns=" http://www.w3.org/2000/svg" class="hamburger-icon" width="64" height="64"
+                        viewBox="0 0 48 48">
+                        <rect class="top" x="0" y="0" rx="4" ry="4" width="100%" height="8" />
+                        <rect class="middle" x="0" y="20" rx="4" ry="4" width="100%" height="8" />
+                        <rect class="bottom" x="0" y="40" rx="4" ry="4" width="100%" height="8" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="bg-apresentacao">
+                <div class="container">
+                    <ul>
+                        <li><a href="#apresentacao">/ Apresentação</a></li>
+                        <li><a href="#municipal">/ Âmbito Municipal</a></li>
+                        <li><a href="#estadual">/ Âmbito Estadual</a></li>
+                        <li><a href="#federal">/ Âmbito Federal</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <header class="d-lg-none topo-mobile apresentacao">
+            <div class="container">
+                <p><img src="assets/img/logo-topo-fecomercio.svg" class="img-fluid logo-fecomercio" alt=""></p>
+            </div>
+        </header>
+        <section id="apresentacao" class="secao pb-5">
+            <div class="container">
+                <h1 class="mt-5 mb-5 d-block d-lg-flex">
+                    <span class="texto">FECOMÉRCIO PELO RIO GRANDE</span>
+                    <span class="lettering-demandas esconder mt-3 mt-lg-0 d-block">Demandas
+                        Fecomércio-RS
+                    </span>
+                </h1>
+                <div class="ratio ratio-16x9 mb-5 mt-3 videoMaxWidth">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9PbFDO5Vxbs?si=xbcAHfNvcPULIoNI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <p>Diante da catástrofe pela qual vem passando o Rio Grande do Sul, a <strong>Fecomércio-RS</strong>,
+                    além de estar
+                    promovendo diversas ações de ajuda humanitária direta às pessoas afetadas, solicitou ao Poder
+                    Público, em todos os níveis, medidas que possam auxiliar as empresas gaúchas a retomarem da forma
+                    mais rápida possível as suas atividades.</p>
+
+                <div class="quote">
+                    <a href="#acoes-sistema-fecomercio-sesc-senac" data-ignore="true">Fique por dentro das ações que o
+                        Sistema
+                        Fecomércio-RS/Sesc/Senac tem feito pelo
+                        Estado.</a>
+                </div>
+
+                <p>A reconstrução das áreas afetadas e a restauração das perdas das famílias estão intrinsecamente
+                    ligadas à habilidade da economia local em preservar empregos e voltar a gerar renda para as
+                    pessoas,
+                    uma dinâmica na qual o funcionamento das empresas desempenha um papel fundamental.</p>
+                <p>As medidas solicitadas visam lidar tanto com o problema relacionado à <strong>obstrução de
+                        atividades</strong>, que
+                    atinge inúmeras empresas, incluindo muitas não alagadas diretamente, quanto com as
+                    <strong>perdas
+                        patrimoniais</strong>.
+                </p>
+                <p class="text-center mt-5"><img src="assets/img/assinatura-1.svg" class="img-fluid d-lg-none" alt="">
+                </p>
+                <a href="#municipal" class="bto-seta text-center w-100 d-block overflow-hidden mt-5 mb-5">
+                    <img src="assets/img/seta-baixo-azul.svg" alt="" class="img-fluid d-inline-block">
+                </a>
+
+            </div>
+        </section>
+        <header class="d-lg-none topo-mobile municipal">
+            <div class="container">
+                <p>Âmbito Municipal</p>
+            </div>
+        </header>
+        <section id="municipal" class="secao pt-5 pb-5">
+
+            <div class="container">
+                <h2>ÂMBITO MUNICIPAL</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="box">
+                            <p class="ico-tempo">Prorrogação dos vencimentos e das isenções de ISS, IPTU e TCL,
+                                incluindo parcelamentos em
+                                vigor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="box">
+                            <p class="ico-tempo">Revisão da tabela de <strong>valor venal</strong> dos imóveis, visando
+                                retificar a base
+                                de cálculo do IPTU
+                                e da
+                                TCL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#estadual" class="bto-seta text-center w-100 d-block overflow-hidden mt-5 mb-5">
+                    <img src="assets/img/seta-baixo-lilas.svg" alt="" class="img-fluid d-inline-block">
+                </a>
+            </div>
+        </section>
+        <header class="d-lg-none topo-mobile estadual">
+            <div class="container">
+                <p>Âmbito Estadual</p>
+            </div>
+        </header>
+        <section id="estadual" class="secao pt-5 pb-5">
+            <div class="container">
+                <h2>ÂMBITO ESTADUAL</h2>
+                <div class="row grid">
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Adiamento do aumento de ICMS sobre alimentos, com adiamento da medida
+                                até o final de
+                                2024
+                            </p>
+                            <p class="txt-apoio">
+                                Governo Estadual revogou a partir de junho.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Isenção de ICMS para as empresas mais afetadas</p>
+                            <p class="txt-apoio">
+                                Governo anunciou isenção para aquisições ao ativo imobilizado apenas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Prorrogação do vencimento do ICMS (Categoria Geral e Simples Nacional)
+                                por um período
+                                mínimo de 6 meses</p>
+                            <p class="txt-apoio">
+                                Governo anunciou prorrogação de 1 mês para os próximos três vencimentos, o que avaliamos
+                                e consideramos ser insuficiente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Prorrogação dos prazos de parcelamentos em vigor</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Não estorno dos créditos referentes aos estoques perdidos</p>
+                            <p class="txt-apoio">
+                                Medida atendida integralmente pelo Governo Estadual.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Prorrogação do prazo de entrega das obrigações acessórias (GIA, DeSTDa,
+                                SPED) por um
+                                período mínimo de 3 meses</p>
+                            <p class="txt-apoio">
+                                Foram prorrogados os prazos da GIA com vencimento até 10/06 e dos arquivos da EFD
+                                referentes
+                                a fatos geradores ocorridos no mês de abril de 2024 para 15/06.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Isenção de ITCD nas doações patrimoniais para afetados pelas enchentes
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="#federal" class="bto-seta text-center w-100 d-block overflow-hidden mt-5 mb-5">
+                    <img src="assets/img/seta-baixo-azul.svg" alt="" class="img-fluid d-inline-block">
+                </a>
+            </div>
+        </section>
+        <header class="d-lg-none topo-mobile federal">
+            <div class="container">
+                <p>Âmbito Federal</p>
+            </div>
+        </header>
+        <section id="federal" class="secao pt-5 pb-5">
+            <div class="container">
+                <h2>ÂMBITO FEDERAL</h2>
+                <div class="row grid">
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Investimentos rápidos e suficientes para a recuperação da
+                                infraestrutura rodoviária do
+                                estado
+                            </p>
+                            <p class="txt-apoio">
+                                A MP 1.218/2024 liberou recursos extraordinários para o RS (R$ 1,2 bi), cuja liberação
+                                efetiva deve ser acompanhada.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Auxílio para as prefeituras para recuperação urbana
+                            </p>
+                            <p class="txt-apoio">
+                                Governo Federal liberou recursos aos municípios, no entanto visando à assistência e em
+                                valor insuficiente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Suspensão dos pagamentos da dívida do Governo Estadual com o Governo
+                                Federal, com
+                                condicionamento dos recursos para investimentos de reconstrução
+                            </p>
+                            <p class="txt-apoio">
+                                O pagamento foi suspenso por 3 anos pelo Governo Federal, com aplicação apenas da
+                                inflação.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Auxílio financeiro ao Governo Estadual para investimentos em
+                                infraestrutura
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Adiamento das parcelas dos programas de negociação administrados pela
+                                PGFN
+                            </p>
+                            <p class="txt-apoio">
+                                A PGFN suspendeu cobranças de parcelamentos por 90 dias.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Prorrogação dos vencimentos dos tributos administrados pela Receita
+                                Federal, incluindo
+                                CPP
+                            </p>
+                            <p class="txt-apoio">
+                                A Receita Federal prorrogou em 3 meses os três vencimentos dos tributos federais (abril,
+                                maio e junho).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Prorrogação do vencimento dos tributos das empresas do Simples Nacional
+                            </p>
+                            <p class="txt-apoio">
+                                O CGSN prorrogou por 1 mês os próximos dois vencimentos do SN, o que avaliamos e
+                                consideramos ser insuficiente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Aumento dos prazos anunciados para prorrogação tributária do Simples
+                                Nacional e
+                                inclusão de todos os municípios
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Dedutibilidade das doações do IRPJ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Possibilidade de suspensão de contratos e redução de jornada de
+                                trabalho e salários,
+                                com garantia do Benefício Emergencial
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Suspensão da exigibilidade dos recolhimentos FGTS
+                            </p>
+                            <p class="txt-apoio">
+                                O MTE suspendeu recolhimentos até julho para os 46 municípios em estado de calamidade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Flexibilização dos prazos para aplicação de férias individuais e
+                                concessão de férias
+                                coletivas
+                            </p>
+                            <p class="txt-apoio">
+                                Está sendo realizado via CCT.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Aplicação do banco de horas para períodos em que as empresas estejam
+                                impedidas de
+                                funcionar
+                            </p>
+                            <p class="txt-apoio">
+                                Está sendo realizado via CCT.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Antecipação e aproveitamento de feriados
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Suspensão de exigências administrativas em segurança e saúde do
+                                trabalho
+                            </p>
+                            <p class="txt-apoio">
+                                Está sendo realizado via CCT.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Implantação do teletrabalho
+                            </p>
+                            <p class="txt-apoio">
+                                Está sendo realizado via CCT.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Direcionamento do trabalhador para qualificação
+                            </p>
+                            <p class="txt-apoio">
+                                Está sendo realizado via CCT.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Recursos a fundo perdido para as empresas mais afetadas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Linhas de crédito facilitadas para recomposição de capital produtivo e
+                                estoques
+                            </p>
+                            <p class="txt-apoio">
+                                Uma medida provisória liberou recursos para financiamentos facilitados, no âmbito do
+                                Pronampe e outros.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Prorrogação do vencimento das parcelas do Pronampe nos financiamentos
+                                em andamento
+                            </p>
+                            <p class="txt-apoio">
+                                A MP 1.216 permite utilização dos recursos para liquidação de operações vigentes,
+                                prorrogação e suspensão de pagamentos por até 12 meses (prazo total máximo de 84 meses).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="box">
+                            <p class="ico-tempo">Mediação por parte da entidade reguladora de seguros privados para
+                                aceleração do
+                                pagamento de sinistros para as empresas que tinham seguros
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#apresentacao" class="bto-seta text-center w-100 d-block overflow-hidden mt-5 mb-5">
+                    <img src="assets/img/seta-cima.svg" alt="" class="img-fluid d-inline-block">
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p class="text-center lh-4">Para mais informações: <br><a href="https://representa.fecomercio-rs.org.br"
+                        class="rodape-link" target="_blank">ACESSE:
+                        representa.fecomercio-rs.org.br</a></p>
+                <p class="text-center">
+                    <img src="assets/img/logo-footter1.svg" class="img-fluid" alt="">
+                </p>
+            </div>
+
+
+
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="acoes-sistema-fecomercio-sesc-senac" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel"><img src="assets/img/logo-topo-fecomercio.svg"
+                            alt="">
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2 class="mt-3">Sistema Fecomércio-RS/Sesc/Senac arrecada doações em todo o Estado e acolhe
+                            desabrigados
+                        </h2>
+                        <p class="titulo"><strong>Apoio aos desabrigados</strong></p>
+                        <p>Unidade Protásio Alves está abrigando 200 pessoas. O Senac Saúde apoia
+                            com profissionais da
+                            área e Sesc Canoas presta apoio disponibilizando refeições, doações e espaço para banho
+                            quente na Unidade</p>
+
+                        <p class="titulo"><strong>Arrecadação de doações</strong></p>
+                        <p>O Sistema Fecomércio-RS/Sesc/Senac segue atuando em apoio ao Estado durante as enchentes.
+                            <strong>
+                                Todas as unidades Sesc e escolas Senac do Rio Grande do Sul e Sindicatos filiados à
+                                Fecomércio-RS
+                            </strong> são pontos de coleta de doações. As arrecadações estão sendo distribuídas por
+                            meio da logística do programa Sesc Mesa Brasil nos municípios atingidos, em suporte à Defesa
+                            Civil.
+                        </p>
+
+                        <p class="destaque">
+                            Para ajudar aos abrigados, as doações podem ser feitas em dinheiro, via Pix
+                            para <a href="mailto:mesabrasil@sesc-rs.com.br"
+                                target="_blank">mesabrasil@sesc-rs.com.br</a> ou depósito/transferência para Banco do
+                            Brasil, agência
+                            3418-5, conta corrente 6461-0, CNPJ 03.575.238-0001/33, em nome de Sesc Mesa Brasil 2020.
+                        </p>
+
+                        <div class="destaque-box">
+                            <p><strong>Arrecadação via PIX do Programa Sesc Mesa Brasil:</strong> R$
+                                2.143.025,42</p>
+                        </div>
+
+                        <p>Até hoje (23/05), o PIX do Programa Sesc Mesa Brasil já arrecadou R$ 2.143.025,42. Além
+                            disso, nas escolas do Senac, unidades do Sesc e sindicatos filiados à Federação, foram
+                            arrecadados 71,332 litros de água, 167 toneladas de alimentos, mais de 84 mil peças de
+                            vestuário, 52,238 produtos de higiene e limpeza e mais de 3 toneladas de ração. No total,
+                            também estão sendo desenvolvidas cerca de 150 ações sociais para ajudar os atingidos pela
+                            enchente no Rio Grande do Sul.</p>
+
+                        <div class="destaque-box">
+                            <p><strong>Doações arrecadadas:</strong></p>
+                            <ul>
+                                <li><strong>71,332 litros</strong> de água</li>
+                                <li><strong>167 toneladas</strong> de alimentos</li>
+                                <li><strong>Mais de 84 mil</strong> peças de vestuário</li>
+                                <li><strong>52,238 produtos</strong> de higiene e limpeza</li>
+                                <li><strong>Mais de 3 toneladas</strong> de ração</li>
+                            </ul>
+                        </div>
+                        <p class="titulo"><strong>Ações de apoio e funcionamento das unidades</strong></p>
+                        <p>Situação das unidades do Sesc e Senac em face das enchentes:</p>
+                        <ul>
+
+                            <li><strong>Sesc Lajeado</strong> está funcionando e recebendo as crianças do Sesquinho e do
+                                Criar em um espaço
+                                improvisado no Senac do município. O prédio do Sesc Mesa Brasil na cidade (Rua José
+                                Schmatz,
+                                1478 - Moinhos) não foi atingido e segue recebendo donativos. O prédio do Sesc Mesa
+                                Brasil
+                                (Rua José Schmatz, 1478 - Moinhos) Não foi atingido e segue recebendo donativos. </li>
+
+                            <li><strong>Senac Canoas</strong> que está fechado no município, está atuando em conjunto no
+                                auxílio da recepção
+                                da comunidade na Unidade do Sesc na cidade, que está fornecendo apoio às equipes de
+                                resgate,
+                                com alimentação para os profissionais da Defesa Civil, Brigada Militar, Bombeiros e
+                                voluntários dos botes e barcos, além da distribuição de água potável, recebimento de
+                                doações
+                                e fornecimento de banho quente para a população.</li>
+
+                            <li><strong>Sesc Protásio Alves, Porto Alegre</strong> está abrigando 200 pessoas
+                                atualmente,
+                                sendo que já chegou
+                                a atender 310 desabrigados. Neste momento, não estão sendo necessárias serviço de
+                                voluntários, pois o atendimento está sendo feito pelos funcionários do Sistema,
+                                incluindo os
+                                profissionais de saúde do Senac. Todos estão recebendo amplo acolhimento, com refeições,
+                                atendimentos médicos, medicações e atendimento psicológico.</li>
+
+                            <li><strong>Unidades Sesc afetadas fechadas para atendimento:</strong> Porto Alegre: 4º
+                                Distrito, Comunidade, Anchieta e Alberto Bins; Região Metropolitana: Cachoeirinha.</li>
+
+                        </ul>
+
+                        <p><strong>A sede da Fecomércio-RS</strong>, onde está localizada a unidade Anchieta e as
+                            direções regionais
+                            do
+                            Sesc e do Senac também foi atingida. Alguns serviços de toda rede podem ser impactados.
+                            Nos
+                            locais atingidos, os colaboradores que estão possibilitados de atuarem</p>
+                        neste momento, trabalham em regime de plantão devido à dificuldade de deslocamento,
+                        priorizando
+                        serviços como atendimento da Escola de Educação Infantil (Sesquinho), para que as famílias
+                        sigam
+                        conseguindo trabalhar e atuar neste momento de crise. Aqueles profissionais que precisaram
+                        sair
+                        de suas residências, estão recebendo apoio do Sistema com hospedagem em hotéis.
+                        <br><br><br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="bto-fechar" data-bs-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="assets/jquery/jquery-3.7.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <script>
+        $(function () {
+            $('.row.grid').masonry({
+                itemSelector: '.col-md-6',
+                percentPosition: true
+            });
+        })
+    </script>
     <script src="assets/js/scripts.js"></script>
 </body>
 

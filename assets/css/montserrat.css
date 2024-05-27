@@ -1,0 +1,39 @@
+/* Montserrat Italic */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400; /* Normal */
+  }
+  
+  /* Montserrat Black Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BlackItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 900; /* Black */
+  }
+  
+  /* Montserrat Bold */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700; /* Bold */
+  }
+  
+  /* Montserrat Bold Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700; /* Bold */
+  }
+  
+  /* Montserrat Regular */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400; /* Normal */
+  }
