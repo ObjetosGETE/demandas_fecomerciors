@@ -47,7 +47,7 @@
     --ico-tempo: "../img/ico-tempo.svg";
     --ico-tempo-png: "../img/ico-tempo.png";
     --ico-megafone: "../img/ico-megafone.svg";
-    --ico-tempo-png: "../img/ico-megafone.png";
+    --ico-megafone-png: "../img/ico-megafone.png";
     --ico-bars: "../img/ico-bars.svg";
     --ico-bars-png: "../img/ico-bars.png";
 
@@ -140,11 +140,16 @@
   box-shadow: 0 8px 0 rgba(0,0,0,0.25);
   overflow: hidden;
 }
-
-.box [class^="ico-"] {
-  padding-left: 70px;
+.ico-tempo {
   background: url(../img/ico-tempo.svg) center left no-repeat;
-  margin-left: 35px;
+}
+.ico-megafone {
+  background: url(../img/ico-megafone.svg) center left no-repeat;
+}
+.box [class^="ico-"] {
+  padding-left: 75px;
+
+  margin-left: 45px;
   margin-right: 35px;
   margin-top: 35px;
   margin-bottom: 37px;
